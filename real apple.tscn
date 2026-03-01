@@ -19,10 +19,10 @@ texture = ExtResource("1_e5wjg")
 
 [node name="Apple" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
-offset_left = 460.0
-offset_top = 140.0
-offset_right = 788.0
-offset_bottom = 474.0
+offset_left = 783.0
+offset_top = 277.0
+offset_right = 1111.0
+offset_bottom = 611.0
 script = SubResource("GDScript_e5wjg")
 
 [connection signal="pressed" from="Apple" to="Apple" method="_on_pressed"]
