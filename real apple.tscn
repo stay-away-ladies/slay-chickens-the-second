@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4fvinmwbdg61"]
+
+[ext_resource type="Texture2D" uid="uid://0o5avav67a66" path="res://videos/Untitled Design Presentation (1).png" id="1_e5wjg"]
+
+[sub_resource type="GDScript" id="GDScript_e5wjg"]
+resource_name = "apple"
+script/source = "extends Button
+
+
+func _on_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://preview video.tscn\")
+"
+
+[node name="Node2D" type="Node2D"]
+
+[node name="UntitledDesignPresentation(1)" type="Sprite2D" parent="."]
+position = Vector2(599, 269)
+texture = ExtResource("1_e5wjg")
+
+[node name="Apple" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 460.0
+offset_top = 140.0
+offset_right = 788.0
+offset_bottom = 474.0
+script = SubResource("GDScript_e5wjg")
+
+[connection signal="pressed" from="Apple" to="Apple" method="_on_pressed"]
